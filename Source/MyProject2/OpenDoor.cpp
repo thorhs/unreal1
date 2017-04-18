@@ -29,7 +29,7 @@ void UOpenDoor::OpenDoor()
 	// Find the owning actor Store as Owner
 	AActor *Owner = GetOwner();
 
-	FRotator NewRotation = FRotator(0.0f, 60.0f, 0.0f);
+	FRotator NewRotation = FRotator(0.0f, OpenAngle, 0.0f);
 
 	Owner->SetActorRotation(NewRotation);
 }
